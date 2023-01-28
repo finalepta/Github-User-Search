@@ -1,0 +1,177 @@
+@import 'scss/_search';
+@import 'scss/tabs';
+
+body {
+    width: 1140px;
+    margin: 0 auto;
+}
+.content {
+    margin-left: 50px;
+}
+.btns {
+    margin-left: 50px;
+}
+.repos {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    padding: 2px 7px;
+    background-color: rgb(235, 101, 101);  
+}
+.img {
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    display: inline-block;
+}
+.window {
+    display: none;
+    
+}
+.svg {
+    height: 15px;
+    width: 10px;
+}
+.name {
+    margin-top: 70px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #1c1e20;
+}
+.nickname {
+    font-size: 20px;
+    font-weight: light;
+    color: #768390;
+}
+.subs {
+    margin-top: 3px;
+    .followers, .followed {
+        font-weight: bold;
+    }
+}
+.bio {
+    margin-top: 9px;
+    font-size: 16px;
+}
+.company {
+    margin-top: 20px;
+}
+.location {
+    margin-top: 0px;
+    font-size: 16px;
+
+}
+
+.inactive-card {
+    display: none;
+    animation: hide 1s 1;
+}
+.active-card {
+    animation: show 1s 1;
+    display: flex;
+} 
+@keyframes show {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes hide {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+.error {
+    display: none;
+    width: 350px;
+    margin-left: 15px;
+    height: 50px;
+    font-weight: bold;
+    align-items: center;
+    span {
+        color: red;
+        
+    }
+}
+.button-group {
+    display: flex;
+    justify-content: start;
+}
+.svg-2 {
+    width: 20px;
+    height: 20px;
+}
+.title {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.reposits {
+    width: 790px;
+    height: 530px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    scrollbar-width: 5px;
+    margin-left: 50px;
+}
+.repo {
+    margin-bottom: 23px;
+    width: 370px;
+    min-height: 120px;
+    border-radius: 10px;
+    padding: 18px;
+    border: 1px solid lightslategray;
+    &__title {
+        font-size: 14px;
+        margin: 0;
+        margin-left: 5px;
+    }
+    &__descr {
+        margin-top: 18px;
+        font-size: 12px;
+    }
+    &__lang {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__color {
+        width: 13px;
+        height: 13px;
+        border: 1px solid lightslategray;
+        border-radius: 50%;
+    }
+    &__language {
+        margin-left: 5px;
+        font-size: 12px;
+    }
+    &__things {
+        margin-top: 12px;
+        font-size: 12px;
+        width: 125px;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__forks {
+        display: flex;
+        justify-content: space-between;
+        width: 28px;
+
+    }
+}
+a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+}
